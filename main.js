@@ -55,6 +55,8 @@ function checkWinner() {
         winnerText.textContent = "Game over, You won !";
         winnerText.classList.remove("visibilityHidden");
         winnerText.classList.add("visible");
+        wrongChooseText.classList.remove("visible");
+        wrongChooseText.classList.add("visibilityHidden");
         finish = true;
         winnerItems.forEach((item) => {
             document.getElementById(item).style.backgroundColor = "#88c965";
@@ -63,6 +65,8 @@ function checkWinner() {
         document.getElementById("text2").textContent = "Game over, You lost !";
         winnerText.classList.remove("visibilityHidden");
         winnerText.classList.add("visible");
+        wrongChooseText.classList.remove("visible");
+        wrongChooseText.classList.add("visibilityHidden");
         finish = true;
         winnerItems.forEach((item) => {
             document.getElementById(item).style.backgroundColor = "#d66070";
